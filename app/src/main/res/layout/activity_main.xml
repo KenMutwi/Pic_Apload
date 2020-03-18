@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="172dp"
+               android:background="#212121">
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/profile_image"
+                   android:layout_width="110dp"
+                   android:layout_height="110dp"
+                   android:src="@drawable/ic_launcher_background"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginTop="24dp"
+                   app:civ_border_width="2dp"
+                   app:civ_border_color="#FF000000"/>
+               <ImageButton
+                   android:id="@+id/btn_Pick"
+                   android:layout_alignRight="@+id/profile_image"
+                   android:layout_alignTop="@+id/profile_image"
+                   android:layout_marginRight="-4dp"
+                   android:layout_marginTop="-4dp"
+                   android:src="@drawable/ic_camera"
+                   android:padding="4dp"
+                   android:background="@drawable/yellow_circle_bg"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <Button
+                   android:id="@+id/btn_Confirm"
+                   android:layout_alignLeft="@+id/profile_image"
+                   android:layout_alignRight="@+id/profile_image"
+                   android:layout_below="@+id/profile_image"
+                   android:layout_marginTop="6dp"
+                   android:text="Confirm"
+                   android:textColor="#ffffff"
+                   android:visibility="invisible"
+                   android:textSize="12sp"
+                   android:paddingRight="6dp"
+                   android:paddingLeft="6dp"
+                   android:drawableLeft="@drawable/ic_done"
+                   android:background="@drawable/green_btn_bg"
+                   android:minHeight="26dp"
+                   android:textAllCaps="false"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </RelativeLayout>
+       </LinearLayout>
+   </ScrollView>
+
+</RelativeLayout>
